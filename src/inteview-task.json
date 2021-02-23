@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "452430ac-aff9-4e1d-9e23-4dc399c5cb1e",
+		"name": "Test Sample",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://t6.gist.kz/api/doctors",
+					"protocol": "https",
+					"host": [
+						"t6",
+						"gist",
+						"kz"
+					],
+					"path": [
+						"api",
+						"doctors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Эльмира",
+							"type": "text"
+						},
+						{
+							"key": "ocupation",
+							"value": "Кардиолог",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://t6.gist.kz/api/doctors/create",
+					"protocol": "https",
+					"host": [
+						"t6",
+						"gist",
+						"kz"
+					],
+					"path": [
+						"api",
+						"doctors",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
